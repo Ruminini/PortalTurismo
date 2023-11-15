@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone X",
+        "category": "Electrónica",
+        "store": "TecnoHub",
+        "image": "smartphone.jpg",
+        "description": "Potente smartphone con pantalla OLED y cámara de alta resolución.",
+        "price": 699.99
+    },
+    {
+        "id": 2,
+        "name": "Zapatillas Deportivas Y",
+        "category": "Moda",
+        "store": "FashionLand",
+        "image": "zapatillas.jpg",
+        "description": "Zapatillas deportivas de última generación, ideales para correr o entrenar.",
+        "price": 89.99
+    },
+    {
+        "id": 3,
+        "name": "Libro: Aventuras en la Selva",
+        "category": "Libros",
+        "store": "BookWorld",
+        "image": "libro_aventuras.jpg",
+        "description": "Emocionante novela que transporta a los lectores a una aventura en la selva.",
+        "price": 19.99
+    },
+    {
+        "id": 4,
+        "name": "Mesa de Centro Elegante",
+        "category": "Muebles",
+        "store": "HomeStyle",
+        "image": "mesa_centro.jpg",
+        "description": "Mesa de centro elegante y moderna para embellecer tu sala de estar.",
+        "price": 249.99
+    },
+    {
+        "id": 5,
+        "name": "Juego de Utensilios de Cocina",
+        "category": "Hogar",
+        "store": "KitchenPro",
+        "image": "utensilios_cocina.jpg",
+        "description": "Juego completo de utensilios de cocina de acero inoxidable de alta calidad.",
+        "price": 79.99
+    },
+    {
+        "id": 6,
+        "name": "Telescopio Astronómico",
+        "category": "Ciencia",
+        "store": "StellarGaze",
+        "image": "telescopio.jpg",
+        "description": "Telescopio potente para observar las maravillas del universo desde tu hogar.",
+        "price": 199.99
+    },
+    {
+        "id": 7,
+        "name": "Guitarra Acústica Clásica",
+        "category": "Instrumentos Musicales",
+        "store": "MusicMasters",
+        "image": "guitarra.jpg",
+        "description": "Guitarra acústica clásica ideal para principiantes y músicos experimentados.",
+        "price": 149.99
+    },
+    {
+        "id": 8,
+        "name": "Juego de Maletas de Viaje",
+        "category": "Viajes",
+        "store": "TravelTrek",
+        "image": "maletas_viaje.jpg",
+        "description": "Conjunto de maletas resistentes y elegantes para tus aventuras de viaje.",
+        "price": 129.99
+    },
+    {
+        "id": 9,
+        "name": "Reloj Inteligente Fitness",
+        "category": "Salud y Bienestar",
+        "store": "WellnessTech",
+        "image": "reloj_fitness.jpg",
+        "description": "Reloj inteligente con funciones avanzadas para monitorizar tu salud y actividad física.",
+        "price": 79.99
+    },
+    {
+        "id": 10,
+        "name": "Puzzle 1000 Piezas: Paisaje Sereno",
+        "category": "Juguetes",
+        "store": "PuzzlePlay",
+        "image": "puzzle.jpg",
+        "description": "Puzzle desafiante con una hermosa imagen de un paisaje sereno.",
+        "price": 24.99
+    },
+    {
+        "id": 11,
+        "name": "Mochila Técnica para Senderismo",
+        "category": "Deportes y Aire Libre",
+        "store": "OutdoorGear",
+        "image": "mochila_senderismo.jpg",
+        "description": "Mochila técnica diseñada para largas caminatas y actividades al aire libre.",
+        "price": 69.99
+    },
+    {
+        "id": 12,
+        "name": "Lámpara de Escritorio LED",
+        "category": "Iluminación",
+        "store": "BrightIdeas",
+        "image": "lampara_led.jpg",
+        "description": "Lámpara LED ajustable para proporcionar iluminación óptima durante el trabajo o estudio.",
+        "price": 39.99
+    },
+    {
+        "id": 13,
+        "name": "Juego de Tazas de Café de Cerámica",
+        "category": "Cocina",
+        "store": "CafeCraft",
+        "image": "tazas_cafe.jpg",
+        "description": "Conjunto elegante de tazas de café de cerámica para disfrutar de tus bebidas favoritas.",
+        "price": 19.99
+    },
+    {
+        "id": 14,
+        "name": "Auriculares Inalámbricos Bluetooth",
+        "category": "Tecnología",
+        "store": "SoundScape",
+        "image": "auriculares.jpg",
+        "description": "Auriculares inalámbricos con calidad de sonido premium para disfrutar de la música sin restricciones.",
+        "price": 59.99
+    },
+    {
+        "id": 15,
+        "name": "Set de Pinceles de Arte Profesionales",
+        "category": "Arte y Manualidades",
+        "store": "Artistry",
+        "image": "pinceles_arte.jpg",
+        "description": "Set completo de pinceles de alta calidad para artistas y aficionados a la pintura.",
+        "price": 29.99
+    },
+    {
+        "id": 16,
+        "name": "Planta de Interior: Ficus Elástica",
+        "category": "Jardinería",
+        "store": "GreenHaven",
+        "image": "planta_interior.jpg",
+        "description": "Ficus elástica de interior fácil de cuidar para añadir un toque verde a tu hogar.",
+        "price": 34.99
+    },
+    {
+        "id": 17,
+        "name": "Juego de Herramientas de Mano",
+        "category": "Bricolaje",
+        "store": "ToolMaster",
+        "image": "herramientas.jpg",
+        "description": "Colección completa de herramientas manuales de alta calidad para proyectos de bricolaje.",
+        "price": 79.99
+    },
+    {
+        "id": 18,
+        "name": "Set de Yoga: Tapete y Bloques",
+        "category": "Fitness",
+        "store": "FitGear",
+        "image": "yoga_set.jpg",
+        "description": "Set esencial para practicar yoga en casa, con tapete antideslizante y bloques de apoyo.",
+        "price": 49.99
+    },
+    {
+        "id": 19,
+        "name": "Juego de Sábanas de Algodón",
+        "category": "Hogar",
+        "store": "ComfortHome",
+        "image": "sabanas.jpg",
+        "description": "Juego suave y cómodo de sábanas de algodón para un descanso perfecto.",
+        "price": 39.99
+    },
+    {
+        "id": 20,
+        "name": "Botella de Agua de Acero Inoxidable",
+        "category": "Salud y Bienestar",
+        "store": "HealthEssentials",
+        "image": "botella_agua.jpg",
+        "description": "Botella duradera de acero inoxidable para mantenerte hidratado mientras estás en movimiento.",
+        "price": 14.99
+    }
+]
