@@ -1,52 +1,11 @@
 // Cargar productos desde el archivo JSON
-fetch('productos.json')
+fetch('js/productos.json')
     .then(response => response.json())
     .then(data => {
         // Llamar a la función para mostrar los productos
         displayProducts(data);
     })
     .catch(error => console.error('Error al cargar los productos:', error));
-
-// Función para mostrar los productos en la página
-function displayProducts(products) {
-    const productList = document.getElementById('productList');
-
-    // Iterar a través de los productos y agregarlos al HTML
-    products.forEach(product => {
-        const productElement = document.createElement('div');
-        productElement.classList.add('product');
-
-        const imageElement = document.createElement('img');
-        imageElement.src = 'https://dummyimage.com/175.png?text=foto%20producto'; //product.image
-        imageElement.alt = product.name;
-
-        const infoElement = document.createElement('div');
-        infoElement.classList.add('product-info');
-
-        const titleElement = document.createElement('div');
-        titleElement.classList.add('product-title');
-        titleElement.textContent = product.name;
-
-        const descriptionElement = document.createElement('div');
-        descriptionElement.classList.add('product-description');
-        descriptionElement.textContent = product.description;
-
-        const priceElement = document.createElement('div');
-        priceElement.classList.add('product-price');
-        priceElement.textContent = `$${product.price.toFixed(2)}`;
-
-        // Agregar elementos al producto
-        infoElement.appendChild(titleElement);
-        infoElement.appendChild(descriptionElement);
-        productElement.appendChild(imageElement);
-        productElement.appendChild(infoElement);
-        productElement.appendChild(priceElement);
-
-        // Agregar producto al contenedor
-        productList.appendChild(productElement);
-    });
-}
-
 
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener referencia al campo de búsqueda y a los productos
@@ -91,6 +50,7 @@ function displayCurrencyInfo() {
             eurBlock.querySelector('.blue').textContent = '$' + data.blue_euro.value_avg;
         });
 }
+
 document.addEventListener('DOMContentLoaded', function() {
     displayCurrencyInfo();
 });
