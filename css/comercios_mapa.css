@@ -12,11 +12,9 @@ body{
     color: white;
     text-align: center;
 }
-p{
-    --clr-neon: rgb(255, 222, 189);
-  
+p{  
     font-size: 1.2em;
-    color: var(--clr-neon) !important;
+    
     border: var(--clr-neon) 1px solid;
     border-radius: 0.25em;
     padding: .5em 1em;
@@ -120,6 +118,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 20px;
 }
 
 #modalDesc{

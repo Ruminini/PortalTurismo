@@ -135,32 +135,5 @@ function dibujarComercio(element, index) {
 
 
 
-function esVacio(dato) {
-    if (dato) {
-        return true;
-    }
-    return false;
-}
-
-function ocultarElementoDOM(element) {
-    element.css("display", "none");
-}
-
-function mostrarElementoDOM(element) {
-    element.css("display", "block");
-}
-
-function mostrarElementoDOM(element, mensaje) {
-    $(element).children().text(mensaje);
-    element.css("display", "block");
-}
-
-function cargarImg(el) {
-    let base64 = el.attr('src');
-    if (base64 == "#")
-        base64 = "./resources/images/thumbs/no-image.png";
-    return base64;
-}
-
 
 
