@@ -1,6 +1,6 @@
 var map;
 var marcadoresID =[];
-function cargarMapa(coordenadas) {
+function cargarMapa(coordenadas,nombreComercio) {
 
     var coord;
 
@@ -26,7 +26,7 @@ function cargarMapa(coordenadas) {
     }
 
     var marker = L.marker(coord);
-    marker.addTo(map);
+    marker.addTo(map).bindPopup(nombreComercio);
 
 }
 
@@ -50,7 +50,7 @@ function cargarMultiplesCoordMapa(locations, callback) {
     }
     for (var i = 0; i < locations.length; i++) {
         marker = new L.marker([locations[i][1], locations[i][2]])
-            .bindPopup(i+"-"+locations[i][0])
+            .bindPopup(locations[i][0])
             .on("click", callback)
             .addTo(map);
         

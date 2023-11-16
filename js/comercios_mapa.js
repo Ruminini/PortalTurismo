@@ -16,10 +16,11 @@ function buscadorComercios() {
     let comercio = $("#buscador-comercio").val().toLowerCase();
 
     let resultadosBusqueda = dataComercios.filter(item => filtrarPorNombre(item, comercio));
+    console.log(resultadosBusqueda);
     let coordenadas = [];
     resultadosBusqueda.forEach(function (element, index) {
         dibujarComercio(element, index);
-        let coord = [element.nombre, element.lat, element.lng];
+        let coord = [element.name, element.lat, element.lng];
         coordenadas.push(coord);
     }, this) 
 
