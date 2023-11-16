@@ -1,5 +1,6 @@
 // Cargar productos desde el archivo JSON
-fetch('js/productos.json')
+// Aca iria 'js/productos.json' pero si lo van a ejecutar sin levantar un server no anda
+fetch('https://raw.githubusercontent.com/JMJAlfonso/tpDemoGrupo3/main/js/productos.json')
     .then(response => response.json())
     .then(data => {
         // Llamar a la función para mostrar los productos

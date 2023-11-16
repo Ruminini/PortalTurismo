@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/publicar.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/nav.css">
-    <script src="js/displayProducts.js"></script>
-    <script src="js/publicar.js"></script>
+    <script src="js/displayProducts.js" defer></script>
+    <script src="js/publicar.js" defer></script>
 </head>
 <body>
     <nav>
         <a href="buscar.html">Buscar</a>
         <a href="publicar.html">Publicar</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
+        <a href="asistencia.html">Asistencia</a>
+        <a href="interes.html">Interes</a>
     </nav>
     <section>
         <form>
@@ -42,7 +42,7 @@
             <label for="precio">Precio:</label>
             <input type="number" id="precio" name="precio" step="0.01" required>
         
-            <button type="submit">Enviar</button>
+            <button type="submit">Publicar</button>
             
             <button type="button" onclick="compararPrecios()">Comparar Precios</button>
         </form>
