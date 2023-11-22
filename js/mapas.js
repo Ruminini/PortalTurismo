@@ -1,34 +1,5 @@
 var map;
 var marcadoresID =[];
-function cargarMapa(coordenadas,nombreComercio) {
-
-    var coord;
-
-    if (map) {
-        map.remove();
-        map = null;
-    }
-
-
-    if (coordenadas == undefined || coordenadas == null) {
-        coord = [-34.5221554, -58.7000067];
-    } else
-        coord = coordenadas;
-
-    if (map == undefined || map == null) {
-
-        map = new L.map('mapid');
-        map.setView(coord, 15);
-
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-    }
-
-    var marker = L.marker(coord);
-    marker.addTo(map).bindPopup(nombreComercio);
-
-}
 
 function cargarMultiplesCoordMapa(locations, callback) {
 
@@ -83,12 +54,6 @@ function centrarVista(marker){
     map.setView(marker._latlng,15);
 }
 
-function removeMap(){
-    if (map != null) {
-        map.remove();
-        map = null;
-    }
-}
 
 function removeMarkers(){
     if(map != null){

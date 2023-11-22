@@ -16,20 +16,16 @@ function buscadorComercios() {
     let comercio = $("#buscador-comercio").val().toLowerCase();
 
     let resultadosBusqueda = dataComercios.filter(item => filtrarPorNombre(item, comercio));
-    console.log(resultadosBusqueda);
     let coordenadas = [];
     resultadosBusqueda.forEach(function (element, index) {
         dibujarComercio(element, index);
         let coord = [element.name, element.lat, element.lng];
         coordenadas.push(coord);
     }, this) 
-
-    mostrarEncabezadoComercio(resultadosBusqueda.length, comercio);
     cargarMultiplesCoordMapa(coordenadas, comercioSeleccionado);
     $("#mapid").show();
     $("#titleCardComercio").show();
 }
-
 function filtrarPorNombre(elemento, nombre) {
     if (elemento.name.toLowerCase().includes(nombre)) {
         return true;
@@ -37,23 +33,16 @@ function filtrarPorNombre(elemento, nombre) {
     return false;
 }
 
-function mostrarEncabezadoComercio(cantidadResultados, nombreProducto) {
-    let mensaje = cantidadResultados + ' Comercios encontrados para "' + nombreProducto + '"';
-    $("#comercio-titletle").html(mensaje);
-    $("#results-taller").css("visibility", "visible");
-}
-
 function comercioSeleccionado(e) {
     let nombreMarker = e.target._popup._content;
-    let i = nombreMarker.substring(0, 1);
-
+    let i = nombreMarker.substring(nombreMarker.length-1, nombreMarker.length);
+    i = i-1;           
     let list = $("#listaComercios")[0].children;
     
     Array.from(list).forEach((element,index) => {
         if (element.id == "index-" + i) {
             
             $(element).addClass("destacarComercio")
-            centrarEnLista(element);
             centrarVista(e.target);
 		    
         }else {
@@ -62,20 +51,6 @@ function comercioSeleccionado(e) {
         
 	})
     
-}
-
-
-function centrarEnLista(el){
-    let list = $("#listaComercios")[0].children;
-    let offset = 0;
-    Array.from(list).forEach(element => {
-        if (element.id == el.id) {
-            $("#ll").scrollTop(offset);
-        } else {
-            let h = $(element).height();
-            offset+=h;
-        }
-    })
 }
 
 function limpiarBusquedaYMarcadores(){
@@ -106,13 +81,6 @@ function centrar(element) {
     centrarEnLista(element);
 }
 
-function filtrarPorNombreYFamilia(elemento, nombre, familia) {
-    if ((elemento.familia == familia || familia == "all")
-        && elemento.nombre.toLowerCase().includes(nombre)) {
-        return true;
-    }
-    return false;
-}
 
 //Dibuja un Comercio
 
